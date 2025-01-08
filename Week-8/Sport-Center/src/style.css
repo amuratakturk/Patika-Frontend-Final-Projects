@@ -1,0 +1,1111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* Bu font ailesi Google Font'tan seçildi..*/
+  font-weight: 600;
+  font-style: normal;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  /* Tam genişlik */
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Hassas kaydırma efekti */
+}
+
+/* HEADER SECTION */
+
+#home {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Navbarın genel şekli */
+.nav-scroll {
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px 20px;
+  position: fixed;
+  width: 100%;
+  background-color: #355592;
+}
+
+/* Varsayılan durumda şeffaf yap */
+.nav-scroll.transparent {
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+
+
+
+}
+
+.nav-scroll a:hover {
+  color: #355592;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+
+}
+
+/* Navbar içindeki logo ve menü düzeni */
+.nav-div-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* Menü yapısı */
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+}
+
+.nav-ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-ul a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+
+/* Buton stilleri */
+.button {
+  padding: 10px 15px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: orange;
+}
+
+/* İçerik bölümü stili */
+.content-container {
+  background-image: url('images/hero-man.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+
+.content-container-text {
+  padding: 200px 0;
+  width: 60%;
+  margin: 0 auto;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.content-container h3 {
+  background-color: #101111b4;
+}
+
+.content-container h1 {
+  display: inline;
+  margin-top: 22px;
+  padding: 8px 10px;
+  background-color: #355592;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.content-container h2 {
+  font-size: 70px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.content-container h3 {
+  margin-bottom: 10px;
+}
+
+.content-container p {
+  margin-bottom: 20px;
+}
+
+.button-container {
+  gap: 30px;
+  margin-top: 30px;
+  width: 60%;
+}
+
+.button-1 {
+  background-color: #355592;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.button-1:hover {
+  background-color: #2a4173;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.button-2 {
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 2px solid white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.button-2:hover {
+  background-color: rgba(53, 85, 146, 0.1);
+  color: white;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* 576 px için görünüm */
+@media (max-width: 576px) {
+
+  /* Hamburger menü simgesinin görünümü */
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+  }
+
+  /* Navbar listesinin ayarları */
+  .nav-ul {
+    display: none;
+    /* Varsayılan olarak gizle */
+    flex-direction: column;
+    /* Dikey dizilim */
+    position: absolute;
+    /* Mutlak konumlandırma */
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(53, 85, 146, 0.8);
+    z-index: 999;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+
+  /* Menü açıldığında görünür olacak ayar */
+  .nav-ul.active {
+    display: flex;
+  }
+
+  /* Menü öğeleri için ayarlar */
+  .nav-ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  /* Bağlantı ayarları */
+  .nav-ul a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+  }
+
+  .content-container-text {
+    padding: 10px;
+    width: 100%;
+    margin: 10px;
+    color: white;
+    margin-bottom: 30px;
+  }
+
+  .content-container h1,
+  .content-container h2,
+  .content-container h3 {
+    text-align: left;
+    margin: 0;
+    width: 100%;
+  }
+
+  .button-container {
+    gap: 30px;
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .button-1,
+  .button-2 {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+}
+
+/* MINI CARDS SECTION */
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(237, 243, 250);
+  padding: 20px;
+
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  margin: 15px;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  background-color: white;
+  font-size: 18px;
+}
+
+.card h2 {
+  color: #355592;
+  padding-bottom: 6px;
+}
+
+.card h4 {
+  color: black;
+}
+
+/* 576px altında kartların alt alta görünmesi için */
+@media (max-width: 576px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .card {
+
+    max-width: 80%;
+    margin: 10px 0;
+    padding: 20px;
+  }
+}
+
+/* OUR CLASSES SECTION */
+.polygon {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 60%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 25% 100%, 12.5% 50%);
+  background: #eeebeb;
+}
+
+.line {
+  width: 5%;
+  margin: 0 auto;
+  border: none;
+  border-top: 5px solid orange;
+  border-radius: 4px;
+}
+
+.classes-buttons {
+  text-align: center;
+  justify-content: center;
+  margin: 20px 5px;
+  display: flex;
+  gap: 100px;
+}
+
+.classes-buttons a {
+  margin: 0 10px;
+  text-decoration: none;
+  background-color: #355592;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.classes-buttons a:hover {
+  background-color: orange;
+  border: 5px solid organge;
+  clip-path: polygon(0% 0%, 100% 0%, 99% 89%, 63% 91%, 52% 100%, 42% 90%, 0 90%);
+}
+
+.content-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.left-column {
+  width: 10%;
+  flex: 1;
+  padding-right: 20px;
+  padding-left: 150px;
+}
+
+.right-column {
+  width: 40%;
+  text-align: center;
+  max-width: 600px;
+  height: auto;
+  padding-top: 15px;
+}
+
+
+.left-column h2,
+.left-column p {
+  color: rgb(96, 96, 96);
+  padding: 5px;
+  padding-bottom: 10px;
+}
+
+.left-column p:first-of-type {
+  max-width: 400px;
+  line-height: 1.5;
+}
+
+.right-column img {
+  max-width: 100%;
+  height: auto;
+  padding-right: 50px;
+  margin-right: 50px;
+}
+
+/* 576 px Responsive düzenlemeler */
+@media (max-width: 576px) {
+  .polygon {
+    width: 100%;
+    height: 170%;
+    clip-path: polygon(40% 0, 100% 0%, 100% 100%, 66% 100%);
+  }
+
+  .section-title {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .classes-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+  }
+
+  .classes-buttons a {
+    flex: 0 1 calc(35% - 20px);
+    padding: 8px;
+    margin: 0;
+    text-align: center;
+  }
+
+  .content-section {
+    flex-direction: column;
+    padding: 20px;
+
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .right-column img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+  }
+}
+
+/* BMI SECTION */
+.bmi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+/* BMI Calculator kısmı */
+.bmi-calculator {
+  flex: 1;
+  max-width: 40%;
+  margin-right: 20px;
+}
+
+.bmi-calculator h2 {
+  color: #355592;
+  padding-bottom: 20px;
+}
+
+.bmi-calculator p {
+  color: #555353;
+  padding-bottom: 20px;
+}
+
+.bmi-calculator input {
+  width: 40%;
+}
+
+.bmi-calculator span {
+  font-size: 14px;
+  color: #555353;
+}
+
+/* Sonuç Container */
+.result-container {
+  position: relative;
+  flex: 1;
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.result-container h4 {
+  color: #555353;
+  padding-bottom: 10px;
+}
+
+/* BMI Image */
+#bmi-image {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* BMI Indicator (Ok) */
+#bmi-indicator {
+  position: absolute;
+  bottom: -20px;
+  left: 85%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid orange;
+  transition: left 0.5s ease;
+
+}
+
+/* 576px ve altındaki ekranlar için stil ayarlamaları */
+@media (max-width: 576px) {
+  .bmi {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bmi-calculator,
+  .result-container {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .bmi-calculator input {
+    width: 50%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .bmi-calculator span {
+
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  /* Ok konumlandırma ayarları */
+  #bmi-indicator {
+    left: 85%;
+  }
+}
+
+/* TRAINERS SECTION */
+
+.section-title h2 {
+  text-align: center;
+  color: #355592;
+  padding-top: 20px;
+  padding: 10px;
+
+}
+
+.section-title p {
+  text-align: center;
+  color: #333333;
+  padding: 10px;
+}
+
+
+#trainers .container {
+  flex-direction: column;
+  padding: 20px 160px;
+  background-color: rgb(237, 243, 250);
+}
+
+#trainers .images {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.img-container {
+  position: relative;
+  display: inline-block;
+
+  /* Hover olduğunda çizgilerin tam çerçeve oluşturması */
+  &:hover {
+    .outer-frame {
+      &::after {
+        width: 80%;
+        left: 24px;
+        right: 24px;
+      }
+    }
+
+    .outer-frame .side.left {
+      height: 50%;
+      bottom: 16px;
+    }
+
+    .outer-frame .side.right {
+      height: 50%;
+      bottom: 16px;
+    }
+
+    .img-content {
+      bottom: 16px;
+      opacity: 1;
+    }
+  }
+}
+
+.img-container img {
+  width: 300px;
+  height: 350px;
+  border: 2px solid #f39f15;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.outer-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 350px;
+  border: none;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: #355592;
+    transition: all 0.5s ease;
+  }
+}
+
+/* Üst çizgi */
+.outer-frame::before {
+  width: 80px;
+  height: 8px;
+  top: -8px;
+  left: calc(50% - 40px);
+}
+
+/* Alt çizgi*/
+.outer-frame::after {
+  width: 80px;
+  height: 8px;
+  bottom: -8px;
+  left: calc(50% - 40px);
+}
+
+/*sol ve sağ çizgiler için side ile konum ve renk tanımlaması*/
+.outer-frame .side {
+  position: absolute;
+  background-color: #355592;
+  transition: all 0.5s ease;
+}
+
+/* Sol ve sağ çizgi */
+.outer-frame .side.left {
+  width: 8px;
+  height: 120px;
+  left: -8px;
+  top: calc(50% - 60px);
+}
+
+.outer-frame .side.right {
+  width: 8px;
+  height: 120px;
+  right: -8px;
+  top: calc(50% - 60px);
+}
+
+.img-content {
+  color: #e5e7eb;
+  position: absolute;
+  left: 16px;
+  width: 268px;
+  bottom: 0;
+  padding: 24px 8px;
+  text-align: center;
+  background-color: #355592;
+  clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+  opacity: 0;
+  transition: all 250ms linear;
+}
+
+.img-content p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-top: 8px;
+}
+
+/* 576px'den küçük ekranlar için stil ayarları */
+@media (max-width: 576px) {
+  #trainers .container {
+    padding: 20px 20px;
+  }
+
+  .section-title {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .section-title h2 {
+    font-size: 24px;
+  }
+
+  .section-title p {
+    font-size: 14px;
+  }
+
+  #trainers .images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-container {
+    margin: 10px 0;
+  }
+
+  .img-container img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* PURCHASE SECTION */
+
+#purchase {
+  padding-top: 20px;
+  ;
+}
+
+.card-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 10px;
+}
+
+.purchase-container {
+  border: 1px solid #ddd;
+  width: 200px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.purchase-container:hover {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+}
+
+.purchase-container:hover .cart {
+  background-color: #355592;
+  color: white;
+}
+
+.purchase-container:hover .cart i {
+  color: #FFA500;
+
+}
+
+
+.purchase-container img {
+  width: 100%;
+  height: auto;
+}
+
+.purchase-container h4 {
+  margin: 1px;
+}
+
+.purchase-container h6 {
+  font-size: 12px;
+}
+
+.purchase-container h6 span {
+  text-decoration: line-through;
+}
+
+.cart {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.cart i {
+  font-size: smaller;
+  padding-top: 2px;
+}
+
+/* Responsive stil ayarları */
+@media (max-width: 576px) {
+  .card-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .purchase-container {
+    width: 80%;
+    margin: 10px auto;
+  }
+}
+
+/* REVIEW CLIENT SECTION */
+
+#review {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 10px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+
+.review-container {
+  background-color: rgb(237, 243, 250);
+  position: relative;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.client-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.client-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.client-info h4,
+h6 {
+  margin: 0;
+
+}
+
+.client-info h6 {
+  color: #555353;
+}
+
+.client-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.reviewer {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 45%;
+}
+
+.comment {
+  position: relative;
+  width: 100%;
+  color: white;
+  font-size: 14px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #355592;
+}
+
+.border {
+  position: absolute;
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+  top: 100%;
+  left: 0px;
+  width: 50px;
+  height: 30px;
+  z-index: 2;
+  background-color: #7788a8;
+
+}
+
+.mirror-border {
+  position: absolute;
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+  top: 100%;
+  right: 0px;
+  width: 50px;
+  height: 30px;
+  z-index: 2;
+  background-color: #7788a8;
+}
+
+@media (max-width: 576px) {
+  .client-container {
+    flex-direction: column;
+  }
+
+  .reviewer {
+    width: 100%;
+    padding-bottom: 15px;
+  }
+
+
+}
+
+/* Contact Us */
+.map-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 20px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.contact-item h4 {
+  margin: 5px;
+}
+
+.contact-item span {
+  color: #333333;
+  font-size: 12px;
+}
+
+.contact-info input,
+textarea {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(237, 243, 250);
+  border: none;
+}
+
+.map {
+  display: flex;
+  height: 320px;
+
+}
+
+/* Responsive tasarım için 576px'den küçük ekranlar için stil ekleme */
+@media (max-width: 576px) {
+  .map-form-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contact-item {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .contact-item h4 {
+    flex: 1;
+    margin: 0px;
+  }
+
+  .contact-info h2 {
+    margin: 10px 0;
+  }
+
+  .contact-info input,
+  .contact-info textarea {
+    margin-top: 10px;
+  }
+}
+
+/* FOOTER SECTION */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #355592;
+  border-top: 1px solid #ddd;
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+}
+
+.footer-logo p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-size: 14px;
+  color: white;
+  font-weight: lighter;
+  padding: 5px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.link-list {
+  list-style-type: none;
+  padding: 5px;
+}
+
+.link-list li {
+  margin: 5px 0;
+}
+
+.link-list a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+.link-list a:hover {
+  text-decoration: underline;
+}
+
+.link-section h2 {
+  color: white;
+  font-size: large;
+  padding-bottom: 2px;
+}
+
+/* 576px ve altındaki düzenlemeler */
+@media (max-width: 576px) {
+  .footer {
+    align-items: flex-start;
+  }
+
+  .footer-logo {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .footer-logo img {
+    justify-content: flex-start;
+    width: 40%;
+    margin: 0;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sport Center</title>
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <!--HOME SECTION-->
+  <header id="home">
+
+    <!--Navbar Menu Items -->
+    <div class="container">
+      <nav class="nav-scroll" id="navbar">
+        <div class="nav-div-container">
+
+          <img src="./src/images/logo.png" alt="logo" class="logo-img" />
+
+          <div class="menu">
+
+            <!-- Hamburger Menu Icon -->
+            <div class="hamburger" id="hamburger">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+            <ul class="nav-ul" id="navMenu">
+              <li>
+                <a href="#home">Home</a>
+                <a href="#our-classes">Classes</a>
+                <a href="#trainers">Trainer</a>
+                <a href="#review">Review</a>
+                <a href="#contact-us">Contact</a>
+              </li>
+              <!-- Button On Menu -->
+              <li>
+                <button type="submit" class="button">JOIN US</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Header  Section  -->
+      <div class="content-container">
+        <div class="content-container-text">
+          <h1>POWERFULL</h1>
+          <h2>Group</h2>
+          <h2>Practice</h2>
+          <div>
+            <h2>With Trainer</h2>
+            <h3>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.Perspiciatis mollitia laborum eaque sint. Vitae
+              provident, dignissimos obcaecati similique eveniet cum laboriosam rem atque corrupti cupiditate debitis
+              explicabo expedita enim quam fugiat ipsam veniam, impedit aspernatur? Mollitia, et a, praesentium cumque
+              provident ad id voluptate quo recusandae explicabo ex corporis! Reprehenderit quisquam culpa sed.
+            </h3>
+          </div>
+          <div class="button-container">
+            <button class="button-1">Sign up</button>
+            <button class="button-2">Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- HEADER END-->
+
+  <!-- MINI CARDS SECTION-->
+  <section>
+    <div class="card-container">
+      <div class="card">
+        <h2>325</h2>
+        <h4>Course</h4>
+      </div>
+      <div class="card">
+        <h2>405</h2>
+        <h4>Work Out</h4>
+      </div>
+      <div class="card">
+        <h2>305</h2>
+        <h4>Working Hour</h4>
+      </div>
+      <div class="card">
+        <h2>705</h2>
+        <h4>Happy Client</h4>
+      </div>
+    </div>
+  </section>
+  <!-- MINI CARDS END -->
+
+  <!-- OUR CLASSES SECTION -->
+  <section id="our-classes">
+    <div class="polygon"></div> <!--  Polygon View-->
+    <div class="section-title">
+      <h2>OUR CLASSES</h2>
+      <hr class="line">
+      <p>Lorem ipsum is not simply random text. It has roots in a piece of classical at Hampden-Sydney College.</p>
+    </div>
+    <div class="classes-buttons">
+      <a href="#" onclick="showContent('yoga')">Yoga</a>
+      <a href="#" onclick="showContent('group')">Group</a>
+      <a href="#" onclick="showContent('solo')">Solo</a>
+      <a href="#" onclick="showContent('stretching')">Stretching</a>
+    </div>
+    <div class="classes">
+      <div id="yoga" class="content-section">
+        <div class="left-column">
+          <h2>Why are your Yoga?</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Quae laborum accusamus sapiente vitae fugiat, ullam quo, cupiditate, sint cumque ut natus obcaecati
+            exercitationem ratione quod.</p>
+          <h2>When comes Yoga Your Time.</h2>
+          <p>Saturday-Sunday: 8:00am - 10:00am</p>
+          <p>Monday-Tuesday: 10:00am - 12:00pm</p>
+          <p>Wednesday-Friday: 3:00pm - 6:00pm</p>
+        </div>
+        <div class="right-column">
+          <img src="./src/images/yoga.jpg" alt="Yoga" />
+        </div>
+      </div>
+      <div id="group" class="content-section" style="display: none;">
+        <div class="left-column">
+          <h2>Why are your Group?</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id neque, ullam doloribus quia cumque fugit eum
+            sint molestiae excepturi voluptatem quod inventore doloremque eaque, qui quibusdam, omnis tenetur repellat
+            officiis?</p>
+          <h2>When comes Group Your Time.</h2>
+          <p>Saturday-Sunday: 10:00am - 12:00am</p>
+          <p>Monday-Tuesday: 12:00am - 14:00pm</p>
+          <p>Wednesday-Friday: 5:00pm - 7:00pm</p>
+        </div>
+        <div class="right-column">
+          <img src="./src/images/group.webp" alt="Group" />
+        </div>
+      </div>
+      <div id="solo" class="content-section" style="display: none;">
+        <div class="left-column">
+          <h2>Why are your Solo?</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id neque, ullam doloribus quia cumque fugit eum
+            sint molestiae excepturi voluptatem quod inventore doloremque eaque, qui quibusdam, omnis tenetur repellat
+            officiis?</p>
+          <h2>When comes Solo Your Time.</h2>
+          <p>Saturday-Sunday: 12:00am - 14:00pm</p>
+          <p>Monday-Tuesday: 14:00pm - 16:00pm</p>
+          <p>Wednesday-Friday: 7:00pm - 9:00pm</p>
+        </div>
+        <div class="right-column">
+          <img src="./src/images/solo.jpg" alt="Solo" />
+        </div>
+      </div>
+      <div id="stretching" class="content-section" style="display: none;">
+        <div class="left-column">
+          <h2>Why are your Stretching?</h2>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id neque, ullam doloribus quia cumque fugit eum
+            sint molestiae excepturi voluptatem quod inventore doloremque eaque, qui quibusdam, omnis tenetur repellat
+            officiis?</p>
+          <h2>When comes Stretching Your Time.</h2>
+          <p>Saturday-Sunday: 14:00pm - 16:00pm</p>
+          <p>Monday-Tuesday: 16:00pm - 18:00pm</p>
+          <p>Wednesday-Friday: 9:00pm - 11:00pm</p>
+        </div>
+        <div class="right-column">
+          <img src="./src/images/stret.webp" alt="Stretching" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- OUR CLASSES END -->
+
+  <!-- BMI CALCULATOR SECTION-->
+  <section class="bmi">
+    <div class="bmi-calculator">
+      <h2>BMI Calculator</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut expedita, labore accusamus suscipit atque
+        voluptatibus.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut expedita, labore accusamus suscipit atque
+        voluptatibus.</p>
+      <input type="number" id="height" placeholder="Your Height" oninput="calculateBMI()">
+      <span>cm</span>
+      <input type="number" id="weight" placeholder="Your Weight" oninput="calculateBMI()">
+      <span>kg</span>
+    </div>
+    <div class="result-container">
+      <h4>Your BMI <span id="bmi-result"></span></h4>
+      <img src="./src/images/bmi-index.jpg" alt="BMI Image" id="bmi-image">
+      <div id="bmi-indicator"></div>
+    </div>
+  </section>
+  <!-- BMI CALCULATOR END-->
+
+  <!-- TRAINERS SECTION -->
+  <section id="trainers">
+    <div class="container">
+      <div class="section-title">
+        <h2>OUR BEST TRAINERS</h2>
+        <hr class="line">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, tempora quaerat! <br>Hampden-Sydney College.
+        </p>
+      </div>
+      <div class="images">
+        <div class="img-container">
+          <img src="./src/images/trainer1.jpg" alt="">
+          <div class="outer-frame">
+            <div class="side left"></div>
+            <div class="side right"></div>
+          </div>
+          <div class="img-content">
+            <h4>Olivia Bennett</h4>
+            <p>Yoga Trainer</p>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="./src/images/trainer2.jpg" alt="" />
+          <div class="outer-frame">
+            <div class="side left"></div>
+            <div class="side right"></div>
+          </div>
+          <div class="img-content">
+            <h4>Ethan Carter</h4>
+            <p>Strength Trainer</p>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="./src/images/trainer3.jpg" alt="" />
+          <div class="outer-frame">
+            <div class="side left"></div>
+            <div class="side right"></div>
+          </div>
+          <div class="img-content">
+            <h4>Jane Doe</h4>
+            <p>Cardio Trainer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- TRAINERS END -->
+
+  <!-- PURCHASE SECTION -->
+  <section id="purchase">
+    <div class="container">
+      <div class="section-title">
+        <h2>PURCHASE FROM US</h2>
+        <hr class="line">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, amet! <br>Hampden-Sydney College.</p>
+      </div>
+      <div class="card-images">
+        <div class="purchase-container">
+          <img src="./src/images/purchase1.jpg" alt="">
+          <h4>Kettlebell / 5kg</h4>
+          <h6><span>89,95$</span> / 59,98$</h6>
+          <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h6>Add To Cart</h6>
+          </div>
+        </div>
+        <div class="purchase-container">
+          <img src="./src/images/purchase2.jpg" alt="" />
+          <h4>Treadmill</h4>
+          <h6><span>899,95$</span> / 599,98$</h6>
+          <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h6>Add To Cart</h6>
+          </div>
+        </div>
+        <div class="purchase-container">
+          <img src="./src/images/purchase3.jpg" alt="" />
+          <h4>Adjustable Dumbbell</h4>
+          <h6><span>89,95$</span> / 59,98$</h6>
+          <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h6>Add To Cart</h6>
+          </div>
+        </div>
+        <div class="purchase-container">
+          <img src="./src/images/purchase4.jpg" alt="" />
+          <h4>Kettlebell / 3kg</h4>
+          <h6><span>89,95$</span> / 59,98$</h6>
+          <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h6>Add To Cart</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- PURCHASE END  -->
+
+  <!-- REVIEW CLIENT SECTION -->
+  <section id="review">
+    <div class="review-container">
+      <div class="section-title">
+        <h2>REVIEW CLIENT</h2>
+        <hr class="line">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis. <br>Hampden-Sydney College.</p>
+      </div>
+      <div class="client-container">
+        <div class="reviewer">
+          <div class="client">
+            <img src="./src/images/client1.jpg" class="client-image">
+            <div class="client-info">
+              <h4>Diet Expert</h4>
+              <h6>CFO</h6>
+            </div>
+          </div>
+          <div class="comment">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio explicabo ad dolore veniam nulla in
+              assumenda, dignissimos a at neque quod cupiditate ipsam, vero autem tempora saepe sapiente ratione fuga!
+            </p>
+            <div class="border"></div>
+            <div class="mirror-border"></div>
+          </div>
+        </div>
+        <div class="reviewer">
+          <div class="client">
+            <img src="./src/images/client2.jpg" class="client-image">
+            <div class="client-info">
+              <h4>Cardio Trainer</h4>
+              <h6>CEO</h6>
+            </div>
+          </div>
+          <div class="comment">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic non voluptatibus, temporibus, eaque earum
+              totam aut accusamus cumque, laudantium atque rem exercitationem voluptas praesentium eos minima delectus
+              adipisci voluptatem quas.</p>
+            <div class="border"></div>
+            <div class="mirror-border"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- REVIEW CLIENT END  -->
+
+  <!-- CONTACT US SECTION  -->
+  <section id="contact-us">
+    <div class="contact-container">
+      <div class="section-title">
+        <h2>CONTACT US</h2>
+        <hr class="line">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti officiis consectetur ipsam.
+          <br>Hampden-Sydney College.</p>
+      </div>
+      <div class="map-form-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <h4>Mobile Number<br><span>+90 111 222 33 33</span></h4>
+            <h4>Email Address<br><span>info@powerfull.com</span></h4>
+          </div>
+          <h2>Make An Appointment</h2>
+          <input type="text" name="name" placeholder="Your Name">
+          <input type="email" name="email" placeholder="Your Email">
+          <textarea name="message" rows="4" cols="50" placeholder="Your Message" style="resize: none;"></textarea>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4416.186886984962!2d27.717199672654594!3d38.494201749949774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b9a7743a276d91%3A0xeb7ea5ec7f4e4a30!2sCross%20Fit-Zone%20Sport%20Center!5e0!3m2!1str!2str!4v1735918288744!5m2!1str!2str"
+            width="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+      </div>
+  </section>
+  <!-- CONTACT US END -->
+
+  <!-- FOOTER START -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <img src="./src/images/logo.png" alt="Logo" class="logo">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur at placeat quod laudantium animi. Iste
+        laboriosam quae iusto minima. Facilis voluptate ratione animi, repudiandae fuga itaque illo sint. Blanditiis,
+        necessitatibus!.</p>
+    </div>
+    <div class="footer-links">
+      <div class="link-section">
+        <h2>Information</h2>
+        <ul class="link-list">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Classes</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="link-section">
+        <h2>Helpful Links</h2>
+        <ul class="link-list">
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Supports</a></li>
+          <li><a href="#">Terms & Condition</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER END -->
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
