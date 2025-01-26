@@ -1,16 +1,16 @@
 import { useState, useEffect } from 'react';
-import { questions } from '../data/questions.js';  //  Import questions
+import { questions } from '../data/questions.js';  // Soruları içe aktar
 
-const Question = ({ question, questionNumber, totalQuestions,onAnswerSelection, onNextQuestion }) => {
-    const [showOptions, setShowOptions] = useState(false); // We check whether the options are displayed or not
-    const [timer, setTimer] = useState(34);  // It keeps track of the time the user has for each question
+const Question = ({ question, questionNumber, totalQuestions, onAnswerSelection, onNextQuestion }) => {
+    const [showOptions, setShowOptions] = useState(false); // Seçeneklerin gösterilip gösterilmediğini kontrol eder
+    const [timer, setTimer] = useState(34);  // Kullanıcının her soru için sahip olduğu süreyi takip eder
 
     useEffect(() => {   
         setTimer(34); 
         setShowOptions(false); 
         
         const showOptionsTimeout = setTimeout(() => {
-            setShowOptions(true); // After 4 seconds, show the options
+            setShowOptions(true); // 4 saniye sonra seçenekleri göster
         }, 4000);
 
         const countdownInterval = setInterval(() => {
@@ -18,35 +18,36 @@ const Question = ({ question, questionNumber, totalQuestions,onAnswerSelection, 
                 if (prevTimer > 0) {
                     return prevTimer - 1;
                 } else {
-                    clearInterval(countdownInterval);
-                    onNextQuestion();
+                    clearInterval(countdownInterval); // Sayaç sıfıra ulaştığında durdur
+                    onNextQuestion(); // Sonraki soruya geç
                     return 0;
                 }
             });
         }, 1000);
 
-            return () => {
-                clearTimeout(showOptionsTimeout);
-                clearInterval(countdownInterval);
-            };
+        // Temizlik işlemleri: Zamanlayıcı ve sayaç temizlenir
+        return () => {
+            clearTimeout(showOptionsTimeout);
+            clearInterval(countdownInterval);
+        };
     }, [questionNumber]);
 
-        const handleOptionClick = (option) => {
-            const isCorrect = option === question.answer;
-            onAnswerSelection(isCorrect, option);
-            onNextQuestion(); // After the option is selected, move on to the next question
-        };
+    const handleOptionClick = (option) => {
+        const isCorrect = option === question.answer; // Kullanıcının cevabının doğru olup olmadığını kontrol et
+        onAnswerSelection(isCorrect, option); // Kullanıcı cevabını işle
+        onNextQuestion(); // Cevap seçildikten sonra bir sonraki soruya geç
+    };
 
     return (
         <div>
-            <p>Soru {questionNumber} / {totalQuestions}</p> {/* We show the question number */}
+            <p>Soru {questionNumber} / {totalQuestions}</p> {/* Soru numarasını göster */}
             <img
-                src={`/pictures/${question.media}`} alt="Question Media"
+                src={`/pictures/${question.media}`} alt="Soru Görseli" 
                 style={{ width: '400px%' , height:'300px', objectFit: 'cover', borderRadius:'8px'}}/>
             <h2> {question.question}</h2>
             {showOptions && ( 
                 <>
-                    <p>🕒 {timer} saniye</p> {/* Timer appears when options are shown */}
+                    <p>🕒 {timer} saniye</p> {/* Sayaç, seçenekler gösterildiğinde görünür */}
                     <ul>
                         {question.options.map((option, index) => (
                             <li key={index} 
