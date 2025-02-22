@@ -1,0 +1,31 @@
+/* Navbar Bileşeni için CSS */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1e3a8a;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.nav-link.active {
+  background-color: white;
+  border-radius: 1px;
+  color: black;
+}
+
+.nav-link:hover {
+  background-color: yellow;
+  color:black;
+}

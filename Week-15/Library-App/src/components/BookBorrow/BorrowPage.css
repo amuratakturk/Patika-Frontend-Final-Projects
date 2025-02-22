@@ -1,0 +1,208 @@
+/* Genel Konteyner */
+.book-borrowing-container {
+    width: 80%; /* Tutarlılık için ayarlanmış genişlik */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Başlık */
+.book-header {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+/* Kitap Satırı */
+.book-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #ddd;
+    padding: 18px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-row:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.book-title {
+    flex: 2;
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.book-author {
+    flex: 1;
+    font-size: 1.2rem;
+    color: #555;
+    text-align: right;
+}
+
+/* Buton Grubu */
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+}
+
+/* Butonlar */
+.book-button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.update-button {
+    background-color: #28a745;
+}
+
+.update-button:hover {
+    background-color: #218838;
+}
+
+
+.delete-button {
+    background-color: #dc3545;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+.add-form-button {
+    padding: 12px 18px;
+    background-color: #2835a7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.add-form-button:hover {
+    background-color: #4316ac;
+    transform: scale(1.05);
+}
+
+.cancel-button {
+    padding: 12px 18px;
+    background-color: #b63318;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.cancel-button:hover {
+    background-color: #a52815;
+    transform: scale(1.05);
+}
+
+/* Formlar */
+.book-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.form-input {
+    padding: 12px;
+    margin-bottom: 18px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Formlar */
+.book-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px; /* Azaltılmış üst boşluk */
+    padding: 15px; /* Daha küçük form için azaltılmış iç boşluk */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    max-width: 400px; /* Tutarlılık için genişlik sınırlandırıldı */
+    margin-left: auto;
+    margin-right: auto; /* Formu ortala */
+}
+
+.form-input {
+    padding: 8px; /* Azaltılmış iç boşluk */
+    margin-bottom: 12px; /* Tutarlı boşluk için ayarlandı */
+    font-size: 1rem; /* Ayarlanmış font boyutu */
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    max-width: 100%; /* Girişlerin taşmasını önle */
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Gönderme Butonu */
+.submit-button {
+    padding: 8px 12px; /* Azaltılmış iç boşluk */
+    background-color:  #218838;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem; /* Ayarlanmış font boyutu */
+    cursor: pointer;
+    width: 100%; /* Buton tam genişlikte olacak */
+}
+
+.submit-button:hover {
+    background-color: #0d6321;
+    transform: scale(1.05);
+}
+
+.add-form-button {
+    padding: 10px 15px;
+    background-color: #2835a7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.add.form-button:hover {
+    background-color: #4316ac;
+}
+
+/* Başlık */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #222;
+}
