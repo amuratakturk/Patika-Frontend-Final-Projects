@@ -2,6 +2,11 @@
 
 Bu proje, bir kütüphane yönetim sistemi için frontend ve backend API'lerini içerir. Yazarlar, kitaplar, ödünç almalar, kategoriler ve yayıncılar için CRUD işlemlerini yönetir. Proje, React ve Axios kullanılarak geliştirilmiştir.
 
+## Canlı Link :
+
+**[Netlify Link](https://delightful-dieffenbachia-6c181a.netlify.app/)**
+
+
 ## Özellikler
 
 - **Yazarlar**: Yazar ekleme, güncelleme, silme ve listeleme işlemleri.
