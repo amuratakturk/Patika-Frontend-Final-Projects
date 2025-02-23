@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = "http://localhost:8080/api/v1/authors"; // Endpoint URL
+const BASE_URL = import.meta.env.VITE_BASE_URL + "/api/v1/authors"; // Endpoint URL
 
 // Get Authors
 export const  getAuthors = async () => {

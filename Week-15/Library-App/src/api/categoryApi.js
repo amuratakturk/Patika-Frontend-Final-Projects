@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:8080/api/v1/categories';  // Endpoint URL
+const BASE_URL = import.meta.env.VITE_BASE_URL + '/api/v1/categories';  // Endpoint URL
 
 // Get Categories (GET)
 export const getCategories = async () => {
