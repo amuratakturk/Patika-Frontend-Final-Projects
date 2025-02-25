@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = import.meta.env.VITE_BASE_URL + "api/v1/publishers"; // Endpoint URL
+const BASE_URL = import.meta.env.VITE_BASE_URL + "/api/v1/publishers"; // Endpoint URL
 
 // Get Categories (GET)
 export const  getPublishers = async () => {
