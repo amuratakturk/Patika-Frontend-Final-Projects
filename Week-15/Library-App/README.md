@@ -4,7 +4,7 @@ Bu proje, bir kütüphane yönetim sistemi için frontend ve backend API'lerini 
 
 ## Canlı Link :
 
-**[Netlify Link](https://delightful-dieffenbachia-6c181a.netlify.app/)**
+**[Netlify Link](https://delightful-dieffenbachia-6c181a.netlify.app)**
 
 
 ## Özellikler
