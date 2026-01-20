@@ -11,7 +11,7 @@
 
 This project is a single-page website for a sport center, built with HTML, CSS, and JavaScript. It includes multiple sections to showcase various features, such as classes, trainers, BMI calculator, and contact information.
 
----
+----
 
 ## Table of Contents
 
@@ -22,7 +22,7 @@ This project is a single-page website for a sport center, built with HTML, CSS, 
 5. [File Structure](#file-structure)
 6. [Usage](#usage)
 
----
+----
 
 ## Overview
 
@@ -33,7 +33,7 @@ The Sport Center website provides an interactive and user-friendly interface for
 - Customer reviews
 - Contact information
 
----
+----
 
 ## Features
 
@@ -47,7 +47,7 @@ The Sport Center website provides an interactive and user-friendly interface for
 - **Contact Us**: Includes a contact form and an embedded Google Map.
 - **Footer**: Provides links to additional information and policies.
 
----
+----
 
 ## Technologies Used
 
@@ -57,7 +57,7 @@ The Sport Center website provides an interactive and user-friendly interface for
   - Font Awesome (Icons)
 - JavaScript (for interactivity)
 
----
+----
 
 ## Setup
 
@@ -71,7 +71,7 @@ The Sport Center website provides an interactive and user-friendly interface for
     ```
 3. Open the `index.html` file in a web browser to view the website.
 
----
+----
 
 ## File Structure
 
@@ -100,7 +100,7 @@ sport-center/
 └── README.md              # Documentation
 ```
 
----
+----
 
 ## Usage
 
@@ -123,7 +123,7 @@ sport-center/
 
 - The project uses static data for demonstration purposes. For dynamic content (e.g., adding items to a cart), backend functionality will need to be implemented.
 
----
+----
 
 ## License
 
@@ -138,7 +138,7 @@ This project is open-source and available for educational and personal use.
 
 Bu proje, bir spor merkezine ait tek sayfalık bir websitesidir. HTML, CSS ve JavaScript kullanılarak geliştirilmiştir. Sınıflar, eğitmenler, Vücut Kitle İndeksi (BMI) hesaplayıcı ve iletişim bilgileri gibi çeşitli özellikleri sergileyen bölümler içerir.
 
----
+----
 
 ## İçindekiler
 
@@ -149,7 +149,7 @@ Bu proje, bir spor merkezine ait tek sayfalık bir websitesidir. HTML, CSS ve Ja
 5. [Dosya Yapısı](#dosya-yapısı)
 6. [Kullanım](#kullanım)
 
----
+----
 
 ## Genel Bakış
 
@@ -160,7 +160,7 @@ Spor Merkezi websitesi, bir spor salonu veya fitness merkezinin hizmetlerini tan
 - Müşteri yorumları
 - İletişim bilgileri
 
----
+----
 
 ## Özellikler
 
@@ -174,7 +174,7 @@ Spor Merkezi websitesi, bir spor salonu veya fitness merkezinin hizmetlerini tan
 - **İletişim**: İletişim formu ve gömülü bir Google Haritası içerir.
 - **Alt Bilgi**: Ek bilgi ve politikalar için bağlantılar sağlar.
 
----
+----
 
 ## Kullanılan Teknolojiler
 
@@ -184,7 +184,7 @@ Spor Merkezi websitesi, bir spor salonu veya fitness merkezinin hizmetlerini tan
   - Font Awesome (Simge Kütüphanesi)
 - JavaScript (etkileşim için)
 
----
+----
 
 ## Kurulum
 
@@ -198,7 +198,7 @@ Spor Merkezi websitesi, bir spor salonu veya fitness merkezinin hizmetlerini tan
     ```
 3. Websitesini görüntülemek için `index.html` dosyasını bir web tarayıcısında açın.
 
----
+----
 
 ## Dosya Yapısı
 
@@ -227,7 +227,7 @@ sport-center/
 └── README.md              # Dokümantasyon
 ```
 
----
+----
 
 ## Kullanım
 
@@ -244,13 +244,13 @@ sport-center/
 4. **Ürünleri Görüntüleme**:
    Satın Alma bölümünde mevcut fitness ekipmanlarını inceleyebilirsiniz.
 
----
+----
 
 ## Notlar
 
 - Bu proje, gösterim amaçlı statik veriler kullanmaktadır. Dinamik içerik (örneğin, bir alışveriş sepetine ürün ekleme) için backend fonksiyonları uygulanmalıdır.
 
----
+----
 
 ## Lisans
 
