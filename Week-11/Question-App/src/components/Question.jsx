@@ -43,7 +43,7 @@ const Question = ({ question, questionNumber, totalQuestions, onAnswerSelection,
             <p>Soru {questionNumber} / {totalQuestions}</p> {/* Soru numarasını göster */}
             <img
                 src={`/pictures/${question.media}`} alt="Soru Görseli" 
-                style={{ width: '400px%' , height:'300px', objectFit: 'cover', borderRadius:'8px'}}/>
+                className="question-image"/>
             <h2> {question.question}</h2>
             {showOptions && ( 
                 <>
