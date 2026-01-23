@@ -1,3 +1,4 @@
 [build]
+  base = "Week-8/Sport-Center"
   command = "npm run build"
   publish = "dist"
